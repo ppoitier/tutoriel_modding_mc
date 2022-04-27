@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "esmeraldas:block/speeder_top_off",
+    "front": "esmeraldas:block/speeder_off",
+    "side": "esmeraldas:block/speeder_off"
+  }
+}
