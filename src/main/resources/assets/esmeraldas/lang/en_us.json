@@ -1,4 +1,5 @@
 {
   "item.esmeraldas.speed_apple": "Speed Apple",
-  "block.esmeraldas.speeder": "Speeder"
+  "block.esmeraldas.speeder": "Speeder",
+  "entity.esmeraldas.example_entity": "Example Entity"
 }

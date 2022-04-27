@@ -1,8 +1,11 @@
 package com.ppoitier.esmeraldas;
 
 import com.mojang.logging.LogUtils;
+import com.ppoitier.esmeraldas.client.events.RenderingEvents;
 import com.ppoitier.esmeraldas.core.BlockRegistry;
+import com.ppoitier.esmeraldas.core.EntityRegistry;
 import com.ppoitier.esmeraldas.core.ItemRegistry;
+import com.ppoitier.esmeraldas.core.events.EntityEvents;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -27,6 +30,10 @@ public class Esmeraldas {
         ItemRegistry.ITEMS.register(eventBus);
         BlockRegistry.BLOCKS.register(eventBus);
         BlockRegistry.BLOCK_ITEMS.register(eventBus);
+        EntityRegistry.ENTITIES.register(eventBus);
+
+        eventBus.register(EntityEvents.class);
+        eventBus.register(RenderingEvents.class);
     }
 
     public void onCommonSetup(FMLCommonSetupEvent event) {
