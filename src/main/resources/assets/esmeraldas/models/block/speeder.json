@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/orientable",
   "textures": {
-    "all": "esmeraldas:block/speeder_off"
+    "top": "esmeraldas:block/speeder_top_off",
+    "front": "esmeraldas:block/speeder_off",
+    "side": "esmeraldas:block/speeder_off"
   }
 }

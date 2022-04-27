@@ -1,14 +1,11 @@
 package com.ppoitier.esmeraldas.core;
 
 import com.ppoitier.esmeraldas.Esmeraldas;
+import com.ppoitier.esmeraldas.blocks.Speeder;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -22,12 +19,7 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> SPEEDER = registerBlock(
             "speeder",
-            () -> new Block(
-                    BlockBehaviour.Properties
-                            .of(Material.METAL, MaterialColor.EMERALD)
-                            .strength(5.0F, 6.0F)
-                            .sound(SoundType.METAL)
-            )
+            Speeder::new
     );
 
     public static final RegistryObject<Item> SPEEDER_ITEM = registerBlockItem(

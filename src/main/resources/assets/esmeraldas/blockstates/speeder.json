@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "enabled=false": {
       "model": "esmeraldas:block/speeder"
+    },
+    "enabled=true": {
+      "model": "esmeraldas:block/speeder_on"
     }
   }
 }
