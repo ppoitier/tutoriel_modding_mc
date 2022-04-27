@@ -1,7 +1,7 @@
 package com.ppoitier.esmeraldas.core;
 
 import com.ppoitier.esmeraldas.Esmeraldas;
-import net.minecraft.world.item.CreativeModeTab;
+import com.ppoitier.esmeraldas.items.SpeedApple;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,11 +15,7 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> SPEED_APPLE = register(
             "speed_apple",
-            () -> new Item(
-                    new Item.Properties()
-                            .tab(CreativeModeTab.TAB_FOOD)
-                            .stacksTo(16)
-            )
+            SpeedApple::new
     );
 
     private static RegistryObject<Item> register(String name, Supplier<Item> itemSupplier) {
