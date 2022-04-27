@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#O#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "O": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "esmeraldas:speed_apple"
+  }
+}
